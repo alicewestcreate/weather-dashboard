@@ -1,0 +1,40 @@
+
+.search-button, #search-input{
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0px;
+    width: inherit;
+}
+#search-input {
+    padding: 7px;  
+}
+#search-button{
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
+
+hr {
+    border: 1px solid black;
+    width: inherit;
+}
+
+
+.mainForecast {
+    border: 1px solid black;
+}
+
+.forecast {
+    border: 1px solid white;
+    background-color: slategray;
+    color: white;
+    margin: 0px 10px;
+
+}
+
+.icon-img {
+    margin-bottom: 7px;
+
+}
