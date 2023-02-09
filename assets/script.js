@@ -12,7 +12,7 @@ const key = "62d5440eb21080da0f55dfad5e6d254d"
 let fromSearch = function(event) {
     event.preventDefault();
     let cityname = searchInput.value;
-    let geoQuery = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityname + "&limit=5&appid=" + key;
+    let geoQuery = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityname + "&limit=5&appid=" + key;
     getGeoLocation(geoQuery)
     createhistoryButton(cityname) 
     setLocalStorage(cityname) 
@@ -20,7 +20,7 @@ let fromSearch = function(event) {
 
 let fromHistory = function(event) {
     let cityname = event.target.innerHTML
-    let geoQuery = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityname + "&limit=5&appid=" + key;
+    let geoQuery = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityname + "&limit=5&appid=" + key;
     getGeoLocation(geoQuery)
 }
 
