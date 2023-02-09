@@ -14,8 +14,6 @@ let fromSearch = function(event) {
     let cityname = searchInput.value;
     let geoQuery = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityname + "&limit=5&appid=" + key;
     getGeoLocation(geoQuery)
-    createhistoryButton(cityname) 
-    setLocalStorage(cityname) 
 }
 
 let fromHistory = function(event) {
@@ -37,6 +35,9 @@ let getGeoLocation = function(geoQuery)  {
             city = response01[0].name
             lat = response01[0].lat
             lon = response01[0].lon
+
+            createhistoryButton(city) 
+            setLocalStorage(city) 
 
             let queryURL = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=" + key + "&units=metric"
             // Then enter the returned data into the next URL, to get the weather data for that location. 
