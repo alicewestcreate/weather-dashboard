@@ -14,7 +14,8 @@
 </head>
 
 <body>
-  <header class="container-fluid text-center text-white bg-dark p-2 weather-header">
+  <div id="wrap">
+  <header class="container-fluid weather-header">
     <h1>Weather Dashboard</h1>
   </header>
 
@@ -22,17 +23,20 @@
   <div class="container-fluid" style="max-width: 1400px">
     <div class="row">
       <aside class="col-lg-3 pb-3">
-        <h2 id="form-heading" class="mt-1 h3 form-label">
+        <h4 id="form-heading" class="mt-1 h4 form-label">
           Search for a City:
-        </h2>
+        </h4>
+
         <form id="search-form" class="form">
-          <div class="form-group">
+          <div class=" form-group">
             <div class="input-group">
-              <input class="form-input weather-search" type="text" id="search-input" placeholder="London"
+
+              <input class="form-input weather-search" type="search" id="search-input" placeholder="Enter City"
                 aria-labelledby="form-heading" aria-controls="today forecast" />
                 <button type="submit" class="btn search-button" id="search-button" aria-label="submit search">
-                  Search
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+
             </div>
             <hr class="hr weather-hr" />
             <div class="input-group-append">
@@ -59,6 +63,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/333a269518.js" crossorigin="anonymous"></script>
   <script src="assets/script.js"></script>
+</div>
 </body>
 
 </html>
