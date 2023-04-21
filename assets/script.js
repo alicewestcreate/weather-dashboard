@@ -60,7 +60,6 @@ let getGeoLocation = function (geoQuery) {
         url: queryURL,
         method: "GET",
       }).then(function (response02) {
-        console.log(response02);
         list = response02.list; // Returns all weather data points for the next 5 days.
         selectedListItems = getSelectedListItems(list); // Runs func to select only data points for 12 noon each day.
         dataPointVariables = assignDataPointVariables(city, selectedListItems); // Sorts an array of data points, and selects required properties (temp, wind etc).
@@ -229,8 +228,6 @@ let display5DayForecast = function (dataPointVariables) {
 };
 
 let setBackground = function (icon) {
-  console.log(icon);
-
   let bkgroundImg = "";
   switch (icon) {
     case "01d":
@@ -265,11 +262,10 @@ let setBackground = function (icon) {
       break;
   }
 
-  console.log(bkgroundImg);
   const wrapEl = document.querySelector("#wrap");
   wrapEl.style.backgroundImage = `url(${bkgroundImg})`;
   wrapEl.setAttribute("class", "wrap");
-  
+
 };
 
 // ------- HISTORY BUTTONS -------//
