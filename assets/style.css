@@ -3,9 +3,19 @@
 }
 
 
-h1, h2, h3, h4, h5, h6, input, p, button, ::placeholder {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+p,
+button,
+::placeholder {
     color: white;
 }
+
 h2 {
     font-size: 3rem;
 }
@@ -14,12 +24,12 @@ h2 {
 #wrap {
     margin: 0;
     padding: 0;
-    padding-top:20px;
+    padding-top: 20px;
     background-image: url("../assets/images/rainbow.jpg");
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 header {
@@ -43,7 +53,7 @@ aside {
     border-radius: 20px;
     width: 30vw;
     height: 80vh;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid white;
     overflow-y: hidden;
     padding-left: 30px;
@@ -51,15 +61,11 @@ aside {
 }
 
 
-
-
-
 .form {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 
-    
+
 }
 
 .form-group {
@@ -68,7 +74,6 @@ aside {
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* flex-direction: row; */
 }
 
 
@@ -79,33 +84,25 @@ aside {
     width: inherit;
     padding: 0 10px 0 10px;
     border-bottom: 1px solid white;
-    /* flex-direction: row; */
 }
 
-/* #search-input{
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 0px;
-    margin: 0px 0px;
-} */
+
 #search-input {
     order: 1;
-    padding: 7px;  
+    padding: 7px;
     color: white;
-    background-color: rgba(0,0,0,0.0);
+    background-color: rgba(0, 0, 0, 0.0);
     border: none;
     border-radius: 0;
     width: 75%;
-    /* border-bottom: 1px solid black; */
 }
 
 input:focus {
-    all: unset; /* Reset all styles */
-  
-  }
+    all: unset;
+}
 
 
-#search-button{
+#search-button {
     order: 2;
     color: white;
     width: min-content;
@@ -118,19 +115,21 @@ input:focus {
     margin: 5px 0px;
 
 }
+
 .btn {
     color: white;
 
 }
+
 #search-button:hover {
-    text-decoration: none; /* Remove any underline or text decoration */
-    cursor: pointer; /* Change the cursor to a pointer */
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #search-button:focus {
-    outline: none; /* Remove the default focus outline */
-    box-shadow: none; /* Remove any box shadow */
-  }
+    outline: none;
+    box-shadow: none;
+}
 
 .history:hover {
     color: white;
@@ -138,14 +137,9 @@ input:focus {
     border: #cc5500 1px solid;
 
 }
-/* hr {
-    border: 1px solid black;
-    width: inherit;
-} */
 
 
 .mainForecast {
-    /* border: 1px solid black; */
     padding: 30px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, .25);
@@ -154,7 +148,7 @@ input:focus {
 }
 
 .textContainer {
-    flex:2;
+    flex: 2;
     margin: 2rem;
 }
 
@@ -167,15 +161,13 @@ input:focus {
 
 .cityNameContainer :nth-child(2) {
     font-weight: 100;
-    font-size:  2rem;
-    /* width: 100%; */
-
-} 
+    font-size: 2rem;
+}
 
 
 .weatherContainer p:first-child {
     font-weight: 100;
-    font-size:  2rem;
+    font-size: 2rem;
     width: 100%;
 }
 
@@ -183,27 +175,23 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex:1;
+    flex: 1;
 
 }
 
 .iconcontainer img:only-child {
-
     width: 75%;
 
 }
 
 
 #forecast {
-    margin:10px;
-
-   
+    margin: 10px;
 }
 
 
 
 .forecast {
-    /* border: 1px solid white; */
     border-radius: 10px;
     background-color: rgba(255, 255, 255, .25);
     color: white;
@@ -223,10 +211,7 @@ input:focus {
 }
 
 
-
-@media only screen and (max-width: 780px) { 
-
-    
+@media only screen and (max-width: 780px) {
 
     aside {
         height: auto;
@@ -234,15 +219,10 @@ input:focus {
         border-radius: 0;
         width: auto;
         background-color: transparent;
-        /* background-color: rgba(255,255,255,0.2); */
         border: none;
         overflow-y: hidden;
         padding-left: 30px;
         margin-left: 0px;
-
-
     }
-
-
 
 }
